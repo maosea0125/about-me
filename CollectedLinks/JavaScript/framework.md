@@ -30,9 +30,9 @@ __Plugins__
 [PHPJS](http://phpjs.org/)  
 ----------
 
-[Raphaël](http://raphaeljs.com/index.html) -> js图片处理  
+[Raphaël](http://raphaeljs.com/index.html)   
 ----------
-> Raphaël is a small JavaScript library that should simplify your work with vector graphics on the web. 
+> js图片处理. Raphaël is a small JavaScript library that should simplify your work with vector graphics on the web. 
 
 [Extjs](http://www.sencha.com/)  
 ----------
