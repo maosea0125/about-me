@@ -32,6 +32,7 @@ __Plugins__
 
 [Raphaël](http://raphaeljs.com/index.html) -> js图片处理  
 ----------
+> Raphaël is a small JavaScript library that should simplify your work with vector graphics on the web. 
 
 [Extjs](http://www.sencha.com/)  
 ----------
