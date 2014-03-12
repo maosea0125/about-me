@@ -19,7 +19,8 @@ Framework
         [Tooltip](http://flowplayer.org/tools/tooltip/index.html)
         [Dragsort](http://dragsort.codeplex.com/)
         [MultiSelect](http://abeautifulsite.net/blog/2008/04/jquery-multiselect/)
-        [Super Tables](http://www.matts411.com/post/super_tables/) -> HTML Tables with Fixed Headers and More
+        [Super Tables](http://www.matts411.com/post/super_tables/)
+            HTML Tables with Fixed Headers and More
 
 [jQuery UI](http://jqueryui.com/)  
 ----------
