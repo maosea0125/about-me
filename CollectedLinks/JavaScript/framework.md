@@ -3,7 +3,7 @@ Framework
 
 [jQuery](http://jquery.com/)  
 ----------
-__Plugins__
+__Plugins__  
 [AjaxFileUpload](http://www.phpletter.com/Our-Projects/AjaxFileUpload/)  
 [jqmultiselects](http://code.google.com/p/jqmultiselects/)  
 [autocomplete](http://bassistance.de/jquery-plugins/jquery-plugin-autocomplete/)  
@@ -15,11 +15,11 @@ __Plugins__
 [ScrollTo](http://plugins.jquery.com/project/ScrollTo)  
 [treeview](http://jquery.bassistance.de/treeview/demo/)  
 [image-preview](http://james.padolsey.com/javascript/new-jquery-plugin-imgpreview/)
-[jTip](http://codylindley.com/blogstuff/js/jtip/)
-[Tooltip](http://flowplayer.org/tools/tooltip/index.html)
-[Dragsort](http://dragsort.codeplex.com/)
-[MultiSelect](http://abeautifulsite.net/blog/2008/04/jquery-multiselect/)
-[Super Tables](http://www.matts411.com/post/super_tables/) -> HTML Tables with Fixed Headers and More
+[jTip](http://codylindley.com/blogstuff/js/jtip/)  
+[Tooltip](http://flowplayer.org/tools/tooltip/index.html)  
+[Dragsort](http://dragsort.codeplex.com/)  
+[MultiSelect](http://abeautifulsite.net/blog/2008/04/jquery-multiselect/)  
+[Super Tables](http://www.matts411.com/post/super_tables/) -> HTML Tables with Fixed Headers and More  
 
 [jQuery UI](http://jqueryui.com/)  
 ----------
