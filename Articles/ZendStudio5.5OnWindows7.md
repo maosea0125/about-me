@@ -1,5 +1,5 @@
 Zend Studio 5.5 on Windows 7  
-==========
+------------
 
 > If you are reading this, then you have Windows 7 installed and gave Zend Studio 7.x the old college try, and found it to be quite cumbersome and annoying. After trying to adapt to Zend with Eclipse you opted to go back to Zend Studio 5.5 but found that it doesn’t work ‘out of the box’ on Windows - If you googled ‘Zend 5.5 Windows 7′ you probably found a response on Zend’s Forums where a savior post is located. At first read it is a bit confusing so I am going to attempt to make it a bit more clear here. Make no mistake, save for a few minor changes, the original author djvirgen (appended to by phliplip), are the true geniuses behind the work. You can find the original post @ <http://www.zend.com/forums/index.php?t=msg&th=7855#21175>
 
