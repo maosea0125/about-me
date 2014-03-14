@@ -43,7 +43,9 @@ __Plugins__
 [Mochikit](http://mochi.github.com/mochikit/index.html)  
 ----------
 
-
+[nodejs](http://nodejs.org/)
+----------
+- [从零开始nodejs系列文章]http://blog.fens.me/series-nodejs/
 
 Articles
 ==========
