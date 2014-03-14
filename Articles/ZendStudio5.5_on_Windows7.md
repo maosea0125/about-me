@@ -5,7 +5,6 @@ Zend Studio 5.5 on Windows 7
 
 - Download and install the latest JRE for Windows 7: http://java.com/en/download/manual.jsp
 - Download and install WinRAR (ensure you install with Explorer shell extension checked): http://rarlabs.com
-
 - Download Zend Studio 5.5.1 (you will need Zend account): http://www.zend.com/products/studio/downloads-prev
 - Extract Zend Studio 5.5.1
 - Click into ZendStudio-5_5_1 directory after extraction
