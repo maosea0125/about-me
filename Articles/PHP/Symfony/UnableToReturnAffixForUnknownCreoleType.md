@@ -1,7 +1,7 @@
 When start "symfony propel-build-model" get an error: Unable to return 'affix' for unknown CreoleType:  
 ----------
 
-_Problem_  
+__Problem__  
 When start "symfony propel-build-model" get an error:  
 
     [propel-om] + payment_paypal
@@ -10,7 +10,7 @@ When start "symfony propel-build-model" get an error:
     [phingcall] Unable to return 'affix' for unknown CreoleType:
 
 
-_Reason_  
+__Reason__  
 That is not a problem of PHP 5.3 + SL, even though it happend after the update.  
 It's rather a Creole problem.  
 
@@ -25,7 +25,7 @@ But as they are both 17 only one of them can survive ...
 Apparently php 5.2.x used to overwrite the early 17 (TEXT) with the later (LONGVARCHAR) and apparently that behaviour has changed with 5.3 so that   "LONGVARCHAR" is no longer known as a creoleMapType.  
 
 
-_How to fix_  
+__How to fix__  
 In lib/vendor/creole/CreoleTypes.php Line 39 changed  
     const TEXT = 17;  
 to  
