@@ -45,10 +45,12 @@ __Plugins__
 
 [nodejs](http://nodejs.org/)
 ----------
-- [从零开始nodejs系列文章]http://blog.fens.me/series-nodejs/
+- [从零开始nodejs系列文章](http://blog.fens.me/series-nodejs/)
+- [Node入门](http://www.nodebeginner.org/index-zh-cn.html)
 
 Articles
 ==========
 
-- [学用 JavaScript 设计模式](http://www.oschina.net/translate/learning-javascript-design-patterns)  
+- [JavaScript开发进阶:理解JavaScript作用域和作用域链](http://www.oschina.net/translate/learning-javascript-design-patterns)  
+- [学用JavaScript设计模式](http://www.oschina.net/translate/learning-javascript-design-patterns)  
 - [如何让搜索引擎抓取AJAX内容](http://www.ruanyifeng.com/blog/2013/07/how_to_make_search_engines_find_ajax_content.html)
