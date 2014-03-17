@@ -3,11 +3,12 @@ When start "symfony propel-build-model" get an error: Unable to return 'affix' f
 
 __Problem__  
 When start "symfony propel-build-model" get an error:  
-
-    [propel-om] + payment_paypal
-    [propel-om] -> BasePaymentPaypalPeer [builder: SfPeerBuilder]
-    [propel-om] -> BasePaymentPaypal [builder: SfObjectBuilder]
-    [phingcall] Unable to return 'affix' for unknown CreoleType:
+<code>
+[propel-om] + payment_paypal
+[propel-om] -> BasePaymentPaypalPeer [builder: SfPeerBuilder]
+[propel-om] -> BasePaymentPaypal [builder: SfObjectBuilder]
+[phingcall] Unable to return 'affix' for unknown CreoleType:
+</code>
 
 
 __Reason__  
