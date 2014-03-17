@@ -3,12 +3,10 @@ When start "symfony propel-build-model" get an error: Unable to return 'affix' f
 
 __Problem__  
 When start "symfony propel-build-model" get an error:  
-<code>
-[propel-om] + payment_paypal  
+<code>[propel-om] + payment_paypal  
 [propel-om] -> BasePaymentPaypalPeer [builder: SfPeerBuilder]  
 [propel-om] -> BasePaymentPaypal [builder: SfObjectBuilder]  
-[phingcall] Unable to return 'affix' for unknown CreoleType:  
-</code>
+[phingcall] Unable to return 'affix' for unknown CreoleType:</code>
 
 
 __Reason__  
@@ -28,6 +26,6 @@ Apparently php 5.2.x used to overwrite the early 17 (TEXT) with the later (LONGV
 
 __How to fix__  
 In lib/vendor/creole/CreoleTypes.php Line 39 changed  
-    const TEXT = 17;  
+<code>const TEXT = 17;</code>
 to  
-    const TEXT = 30; //php 5.3.0 fix, using an unused int
+<code>const TEXT = 30; //php 5.3.0 fix, using an unused int</code>
