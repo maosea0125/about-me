@@ -9,7 +9,14 @@ Development
 - [十个让你变成糟糕的程序员的行为](http://coolshell.cn/articles/1081.html)  
 - [各种流行的编程风格](http://coolshell.cn/articles/2058.html)  
 
+HOW
+---
+- [怎样把自己培养成为一个优秀的程序员](http://www.phpv.net/html/1711.html)  
 - [如何编写优质的需求文档](http://blog.jobbole.com/15561/)  
+
+WHY
+---
+- [为什么程序员总是不能准确估测项目时间](http://blog.jobbole.com/24924/)  
 
 - [程序员技术练级攻略](http://coolshell.cn/articles/4990.html)  
 - [97 Things Every Programmer Should Know](http://programmer.97things.oreilly.com/wiki/index.php/97_Things_Every_Programmer_Should_Know)  
