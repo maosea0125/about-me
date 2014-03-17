@@ -23,6 +23,3 @@ Other
 - [如何利用多核CPU来加速你的Linux命令 — awk, sed, bzip2, grep, wc等](http://www.oschina.net/news/45477/use-cpu-cores-linux-commands)  
 - [改造你的windows开发环境](http://jianshu.io/p/23df3e37bd9a)  
 - [惊艳的cygwin - Windows下的Linux命令行环境的配置和使用](oldratlee.com/post/2012-12-22/stunning-cygwin)  
-- [进程与线程的一个简单解释](http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html)  
-
-
