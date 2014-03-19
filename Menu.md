@@ -32,10 +32,6 @@ Menu
 - [金钩冬瓜](http://www.meishij.net/jiangchangcaipu/jingoudonggua.html)
 - [炒年糕]
 
-海鲜
-----
-- [蒜蓉粉丝蒸扇贝](http://www.meishij.net/zuofa/suanrongfensizhengshanbei_20.html)
-
 早餐
 ----
 - [奶香馒头]
@@ -56,3 +52,7 @@ Menu
 甜点
 ----
 - [蛋挞]
+
+海鲜
+----
+- [蒜蓉粉丝蒸扇贝](http://www.meishij.net/zuofa/suanrongfensizhengshanbei_20.html)
