@@ -3,7 +3,8 @@ PHP
 
 - [PHP之道](http://wulijun.github.io/php-the-right-way/)  
 - [Unexpected exclamation marks while using PHP's mail() function](http://brightlemon.com/blog/unexpected-exclamation-marks-while-using-phps-mail-function-0)  
-
+- [Salted Password Hashing - Doing it Right](https://crackstation.net/hashing-security.htm)
+- [加盐密码哈希：如何正确使用](http://blog.jobbole.com/61872/) -> 上面的中文版
 
 Symfony
 ----------
