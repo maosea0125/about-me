@@ -5,6 +5,7 @@ Order by soonest to furthest
 - 还未进行的比赛, 需要从离现在最近排到离现在最远   
 - 已经进行的比赛, 也需要离现在最近排到离现在最远  
 *Sample*  
+
 game表有如下数据  
 id, event_date  
 1, 2013-03-28  
