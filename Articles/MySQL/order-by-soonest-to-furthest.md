@@ -26,6 +26,6 @@ id, event_date
 <pre>
 SELECT id, event_date
   FROM game
-  ORDER BY IF(event_date < NOW(), 0, 1) DESC,
+  ORDER BY IF(event_date \< NOW(), 0, 1) DESC,
   ABS(DATEDIFF(event_date, NOW())) ASC;
 </pre>
