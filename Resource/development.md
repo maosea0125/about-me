@@ -34,6 +34,7 @@ HOW
 - [如何用好 Google 等搜索引擎?](http://www.zhihu.com/question/20161362)  
 - [效率低的日子怎么办?](http://jianshu.io/p/PNq2y9)  
 - [如何招聘程序员, 四步法则助你成功](http://blog.jobbole.com/58114/)  
+- [如何通过命令行查找一个IP的地理位置信息](http://www.geekfan.net/7863/)  
 
 WHY
 ---
@@ -43,3 +44,4 @@ WHY
 Git
 ---
 - [实用 Git 工作流](http://yedingding.com/2013/09/11/practical-git-flow-for-startups.html)  
+- [Pro Git（中文版）](http://git.oschina.net/progit/index.html)  
