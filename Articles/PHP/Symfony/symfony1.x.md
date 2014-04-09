@@ -92,6 +92,44 @@ symfony1.x
     </tbody>
 </table>
 
+### 使用InnoDB(Use InnoDB with Propel)
+[原文地址](http://snippets.symfony-project.org/snippet/1)
+To enable InnoDB support in Propel, you can add this line at the end of your config/propel.ini configuration file:
+<pre>
+propel.mysql.tableType = InnoDB
+</pre>
+
+### 使用事务(Use transaction in the model)
+[原文地址](http://snippets.symfony-project.org/snippet/2)
+<pre>
+$con = Propel::getConnection();
+try{
+  $con->begin();
+ 
+  // do something
+ 
+  $con->commit();
+}catch (Exception $e){
+  $con->rollback();
+  throw $e;
+}
+</pre>
+
+### 在脚本中使用model(Use the model in a batch or a test)
+[原文地址](http://snippets.symfony-project.org/snippet/6)
+To use database connections defined in the databases.yml configuration file, you can use the following snippet:
+<pre>
+// initialize database manager
+$databaseManager = new sfDatabaseManager();
+$databaseManager->initialize();
+</pre>
+
+### 在action中隐藏debug bar(Hide debug screen by actions)
+[原文地址](http://snippets.symfony-project.org/snippet/10)
+<pre>
+sfConfig::set('sf_web_debug', false);
+</pre>
+
 ### doUpdate
 [原文地址](http://stackoverflow.com/questions/12282832/update-multiple-rows-with-propel-1-4)
 
