@@ -93,14 +93,14 @@ symfony1.x
 </table>
 
 ### 使用InnoDB(Use InnoDB with Propel)
-[原文地址](http://snippets.symfony-project.org/snippet/1)
+[原文地址](http://snippets.symfony-project.org/snippet/1)  
 To enable InnoDB support in Propel, you can add this line at the end of your config/propel.ini configuration file:
 <pre>
 propel.mysql.tableType = InnoDB
 </pre>
 
 ### 使用事务(Use transaction in the model)
-[原文地址](http://snippets.symfony-project.org/snippet/2)
+[原文地址](http://snippets.symfony-project.org/snippet/2)  
 <pre>
 $con = Propel::getConnection();
 try{
@@ -116,7 +116,7 @@ try{
 </pre>
 
 ### 在脚本中使用model(Use the model in a batch or a test)
-[原文地址](http://snippets.symfony-project.org/snippet/6)
+[原文地址](http://snippets.symfony-project.org/snippet/6)  
 To use database connections defined in the databases.yml configuration file, you can use the following snippet:
 <pre>
 // initialize database manager
@@ -125,13 +125,34 @@ $databaseManager->initialize();
 </pre>
 
 ### 在action中隐藏debug bar(Hide debug screen by actions)
-[原文地址](http://snippets.symfony-project.org/snippet/10)
+[原文地址](http://snippets.symfony-project.org/snippet/10)  
 <pre>
 sfConfig::set('sf_web_debug', false);
 </pre>
 
+### 获取数据库连接(Fetch database connection)
+[原文地址](http://snippets.symfony-project.org/snippet/11)  
+<pre>
+$connection = sfContext::getInstance()->getDatabaseConnection('propel');
+
+//or
+
+$connection = Propel::getConnection();
+</pre>
+
+### turn on form repopulation
+[原文地址](http://snippets.symfony-project.org/snippet/15)  
+add this to your validation file for the action.
+eg: indexSuccess.php would have have a file called index.yml in the validate directory for that module if you configured validation.
+<pre>
+fillin:
+  activate: on   # activate the form repopulation
+  param:
+    name: test   # name of the form
+</pre>
+
 ### doUpdate
-[原文地址](http://stackoverflow.com/questions/12282832/update-multiple-rows-with-propel-1-4)
+[原文地址](http://stackoverflow.com/questions/12282832/update-multiple-rows-with-propel-1-4)  
 
 <pre>
 $criteria=new Criteria()
@@ -144,7 +165,7 @@ foreach($notification as $notice){
     $notice->save();
 }
 
-// 我们应该使用
+// we should use
 
 $selectCriteria = new Criteria();
 $selectCriteria->add(NotificationPeer::TO, $memberId, Criteria::EQUAL);
