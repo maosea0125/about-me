@@ -1,0 +1,119 @@
+symfony1.x  
+----------
+
+### SQL - Criteria
+<table>
+    <thead>
+        <td>SQL</td>
+        <td>Criteria</td>
+    </thead>
+    <tbody>
+        <tr>
+            <td>WHERE column = value</td>
+            <td>->add(column, value);</td>
+        </tr>
+        <tr>
+            <td>WHERE column <> value</td>
+            <td>->add(column, value, Criteria::NOT_EQUAL);</td>
+        </tr>
+        <tr>
+            <td>></td>
+            <td>Criteria::GREATER_THAN</td>
+        </tr>
+        <tr>
+            <td><</td>
+            <td>Criteria::LESS_THAN</td>
+        </tr>
+        <tr>
+            <td>>=</td>
+            <td>Criteria::GREATER_EQUAL</td>
+        </tr>
+        <tr>
+            <td><=</td>
+            <td>Criteria::LESS_EQUAL</td>
+        </tr>
+        <tr>
+            <td>IS NULL</td>
+            <td>Criteria::ISNULL</td>
+        </tr>
+        <tr>
+            <td>IS NOT NULL</td>
+            <td>Criteria::ISNOTNULL</td>
+        </tr>
+        <tr>
+            <td>LIKE</td>
+            <td>Criteria::LIKE</td>
+        </tr>
+        <tr>
+            <td>ILIKE</td>
+            <td>Criteria::ILIKE</td>
+        </tr>
+        <tr>
+            <td>IN</td>
+            <td>Criteria::IN</td>
+        </tr>
+        <tr>
+            <td>NOT IN</td>
+            <td>Criteria::NOT_IN</td>
+        </tr>
+        <tr><td colspan="2">Other SQL Keywords</td></tr>
+        <tr>
+            <td>ORDER BY column ASC</td>
+            <td>->addAscendingOrderByColumn(column);</td>
+        </tr>
+        <tr>
+            <td>ORDER BY column DESC</td>
+            <td>->addDescendingOrderByColumn(column);</td>
+        </tr>
+        <tr>
+            <td>GROUP BY column DESC</td>
+            <td>->addGroupBy(column);</td>
+        </tr>
+        <tr>
+            <td>LIMIT limit</td>
+            <td>->setLimit(limit)</td>
+        </tr>
+        <tr>
+            <td>OFFSET offset</td>
+            <td>->setOffset(offset)</td>
+        </tr>
+        <tr>
+            <td>FROM table1, table2 WHERE table1.col1 = table2.col2</td>
+            <td>->addJoin(col1, col2);</td>
+        </tr>
+        <tr>
+            <td>FROM table1 LEFT JOIN table2 ON table1.col1 = table2.col2</td>
+            <td>->addJoin(col1, col2, Criteria::LEFT_JOIN)</td>
+        </tr>
+        <tr>
+            <td>FROM table1 RIGHT JOIN table2 ON table1.col1 = table2.col2</td>
+            <td>->addJoin(col1, col2, Criteria::RIGHT_JOIN)</td>
+        </tr>
+    </tbody>
+</table>
+
+### doUpdate
+[原文地址](http://stackoverflow.com/questions/12282832/update-multiple-rows-with-propel-1-4)
+
+<pre>
+$criteria=new Criteria()
+$criteria->add(NotificationPeer::TO, $memberId, Criteria::EQUAL);
+$criteria->add(NotificationPeer::ACTION, 0, Criteria::EQUAL);
+$notification = NotificationPeer::doSelect($criteria);
+
+foreach($notification as $notice){
+    $notice->setRead(1);
+    $notice->save();
+}
+
+// 我们应该使用
+
+$selectCriteria = new Criteria();
+$selectCriteria->add(NotificationPeer::TO, $memberId, Criteria::EQUAL);
+$selectCriteria->add(NotificationPeer::ACTION, 0, Criteria::EQUAL);
+
+$updateCriteria = new Criteria();
+$updateCriteria->add(NotificationPeer::READ, 1);
+
+BasePeer::doUpdate($selectCriteria, $updateCriteria, $con);
+</pre>
