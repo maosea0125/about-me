@@ -20,6 +20,7 @@ CREATE TABLE `game_corner_kicks` (
 
 Bad1:  
 > 这种方式我们执行的SQL将会达到44次, 这种方法性能是最差的  
+
 <pre>
 foreach($cornerKicks as $cornerKick){
     $criteria = new Criteria();
@@ -37,6 +38,7 @@ foreach($cornerKicks as $cornerKick){
 
 Bad2:
 > 这种方式我们执行的SQL将会达到23次, 同样会导致自增字段id的急剧增大  
+
 <pre>
 //delete the data and insert again
 $criteria = new Criteria();
@@ -54,6 +56,7 @@ foreach($cornerKicks as $cornerKick){
 
 Good:
 > 这种方式我们执行的SQL将会达到22次  
+
 <pre>
 $connection = Propel::getConnection($con);
 
