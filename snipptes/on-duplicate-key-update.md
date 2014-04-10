@@ -18,7 +18,7 @@ CREATE TABLE `game_corner_kicks` (
 当我们需要更新corner_kicks字段的数据时, 我们并不清楚数据库是否已经存在这样的数据, 我们可以采用的方式有:  
 > Notes: 在一场正常的比赛中, 球员有可能不是一个人, 比如足球, 双方球员加起来有22个.  
 
-Bad1:  
+#### Bad1:  
 > 这种方式我们执行的SQL将会达到44次, 这种方法性能是最差的  
 
 <pre>
@@ -36,7 +36,7 @@ foreach($cornerKicks as $cornerKick){
 }
 </pre>
 
-Bad2:
+#### Bad2:
 > 这种方式我们执行的SQL将会达到23次, 同样会导致自增字段id的急剧增大  
 
 <pre>
@@ -54,17 +54,23 @@ foreach($cornerKicks as $cornerKick){
 }
 </pre>
 
-Good:
-> 这种方式我们执行的SQL将会达到22次  
+#### Good:
 
 <pre>
-$connection = Propel::getConnection($con);
+$sql = '';
+$p   = array();
 
 foreach($cornerKicks as $cornerKick){
-    $sql = "INSERT INTO game_corner_kicks
+    $sql .= "INSERT INTO game_corner_kicks
         (`game_id`, `player_id`, `corner_kicks`) VALUES
-        (?, ?, ?) ON DUPLICATE KEY UPDATE corner_kicks = ?";
-    $p   = array(1, $cornerKick['player_id'], $cornerKick['corner_kick']);
+        (?, ?, ?) ON DUPLICATE KEY UPDATE corner_kicks = ?;";
+    $p[] = 1; 
+    $p[] = $cornerKick['player_id'];
+    $p[] = $cornerKick['corner_kick'];
+}
+
+if($sql){
+    $connection = Propel::getConnection($con);
     $statement = $connection->prepareStatement($sql);
     $statement->executeQuery($p);
 }
