@@ -142,9 +142,9 @@ $connection = Propel::getConnection();
 
 ### turn on form repopulation
 [原文地址](http://snippets.symfony-project.org/snippet/15)  
-add this to your validation file for the action.
-eg: indexSuccess.php would have have a file called index.yml in the validate directory for that module if you configured validation.
-<pre>
+add this to your validation file for the action.  
+eg: indexSuccess.php would have have a file called index.yml in the validate directory for that module if you configured validation.  
+<pre> 
 fillin:
   activate: on   # activate the form repopulation
   param:

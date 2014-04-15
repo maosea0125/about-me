@@ -54,3 +54,4 @@ Articles
 - [ JavaScript 开发进阶: 理解 JavaScript 作用域和作用域链](http://www.oschina.net/translate/learning-javascript-design-patterns)  
 - [学用 JavaScript 设计模式](http://www.oschina.net/translate/learning-javascript-design-patterns)  
 - [如何让搜索引擎抓取AJAX内容](http://www.ruanyifeng.com/blog/2013/07/how_to_make_search_engines_find_ajax_content.html)
+- [JavaScript基础工具清单](http://blog.jobbole.com/64771/)
