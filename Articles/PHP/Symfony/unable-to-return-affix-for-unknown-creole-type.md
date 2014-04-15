@@ -24,7 +24,7 @@ But as they are both 17 only one of them can survive ...
 Apparently php 5.2.x used to overwrite the early 17 (TEXT) with the later (LONGVARCHAR) and apparently that behaviour has changed with 5.3 so that   "LONGVARCHAR" is no longer known as a creoleMapType.  
 
 
-__How to fix__  
+__Solution__  
 In lib/vendor/creole/CreoleTypes.php Line 39 changed  
 <code>const TEXT = 17;</code>  
 to  
