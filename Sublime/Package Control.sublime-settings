@@ -1,0 +1,14 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"DocBlockr",
+		"HTML5",
+		"jQuery",
+		"jQuery Snippets pack",
+		"LineEndings",
+		"Package Control",
+		"Phpcs"
+	]
+}

@@ -1,0 +1,54 @@
+// Settings in here override those in "Default/Base File.sublime-settings", and
+// are overridden in turn by file type specific settings. Place your settings
+// here, to ensure they're preserved when upgrading.
+{
+    // Any additional boilerplate tags which should be added to each block. Should be an array of strings.
+    // Note that this only applies when a docblock is opened directly preceding a function.
+    // Tab points can be added by using snippet syntax, eg: ${1:default text}
+    "jsdocs_extra_tags": ["@author john.mao <johh.mao@expacta.com.cn>", "@issue [issue_number] - [description]"],
+
+    // If extra tags are defined, by default they go between the description and the param/return tags. If this is set to
+    // true, the extra tags are placed at the very end.
+    "jsdocs_extra_tags_go_after": true,
+
+    // Whether there should be blank lines added between the description line, and between tags of different types.
+    // Possible values are true, false, or "after_description".
+    // If true, the output might look like this:
+    //
+    // /**
+    //  * [description]
+    //  *
+    //  * @param  {String} foo
+    //  * @param  {Number} bar
+    //  *
+    //  * @return {[Type]}
+    //  */
+    //
+    // If "after_description" is configured, a blank line is only added between the description and the first tag, but not
+    // between different tag sections, so the output, in that case, might look like this:
+    //
+    // /**
+    //  * [description]
+    //  *
+    //  * @param  {String} foo
+    //  * @param  {Number} bar
+    //  * @return {[Type]}
+    //  */
+    "jsdocs_spacer_between_sections": true,
+
+    // Add a '[description]' placeholder for the return tag?
+    "jsdocs_return_description": false,
+
+    // Minimum spaces between cols (default is 1). For example, a value
+      // of 2 might look like this:
+      //
+      // /**
+      //  * Duis sed arcu non tellus eleifend ullamcorper quis non erat. Curabitur
+      //  *
+      //  * @param   {String}  foo  Lorem ipsum dolor sit amet.
+      //  * @param   {Number}  bar  Nullam fringilla feugiat pretium. Quisque
+      //  *
+      //  * @return  {[Type]}       description
+      //  */
+    "jsdocs_min_spaces_between_columns": 0
+}
