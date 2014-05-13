@@ -12,3 +12,10 @@ Symfony
 
 - [Check if your symfony application is ready for deployment](http://symfony-check.org/)  
 - [Fresh RC2 project crashes in DEV on spl_autoload_call()](http://trac.symfony-project.org/ticket/1430)  
+
+Extension
+----------
+
+#### Taint
+- [Taint-manual](http://cn2.php.net/manual/zh/book.taint.php)  
+- [Taint-wiki](https://wiki.php.net/rfc/taint)  

@@ -26,6 +26,8 @@ Development
 - [那些代码中的"中国式"命名](http://tonybai.com/2013/11/06/those-chinese-style-naming-in-code/)  
 - [每个程序员应该知道的12个API](http://www.importnew.com/8300.html)  
 - [什么样的硬件设备在支撑 Stack Overflow](http://blog.jobbole.com/61646/)  
+- [同工不同酬，年薪 50 万美金的工程师到底有什么神本事？](http://news.cnblogs.com/n/207596/)  
+- [关于效率、程序与生活的一些思考](http://jackiekuo.com/book/2014/04/19/thoughts-on-effectivity-program-and-life/)  
 
 HOW
 ---
