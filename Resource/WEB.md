@@ -5,3 +5,4 @@ WEB
 - [Web 开发中各角色良好约定](http://jianshu.io/p/756c28bbc840)  
 - [推荐18个基于 HTML5 Canvas 开发的图表库](http://www.cnblogs.com/lhb25/archive/2011/04/12/html5-canvas-graphing-solutions.html)
 - [从输入 URL 到页面加载完成的过程中都发生了什么事情](http://fex.baidu.com/blog/2014/05/what-happen/)
+- [系统设计之初应该考虑到的问题](http://iminto.duapp.com/design_five_first)
